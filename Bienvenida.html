@@ -1,6 +1,6 @@
 <!-- original : https://codepen.io/SeanNorton/pen/LWBXQL -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Bebas+Neue" rel="stylesheet">
 
@@ -40,7 +40,7 @@ h1 {
 .card {
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
-    background: #553c4e;
+    background: #CD302D;
     width: 85vw;
     color: #fff;
     display: inline-block;
@@ -54,7 +54,7 @@ h1 {
 
 .clock {
     display: inline;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'DM Sans', cursive;
     font-size: 2em;
    
 }
@@ -72,7 +72,7 @@ h1 {
 .date {
     display: inline;
     min-width: 162px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'DM Sans', cursive;
     font-size: 2em;
     padding-right: 30px;
 }
@@ -116,7 +116,7 @@ document.getElementById('date').innerHTML = today.toDateString();
 
 function clock() {
 var today = new Date();
-var hour = zeros(twelveHour(today.getHours()));
+var hour = zeros(twentyfourHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
 var seconds = zeros(today.getSeconds());
 if(today.getHours() >=12){
