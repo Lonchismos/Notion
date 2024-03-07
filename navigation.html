@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: "DM Sans", sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #CD302D;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="Calendario" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar-check" style="color: #d2291f;"></i> Calendario</a>
+		<a id="Timeline" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bars-staggered" style="color: #d22c1e;"></i> Home</a>
+		<a id="Estado" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-diagram-project" style="color: #d22c1e;"></i> Estado</a>
+		
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "horizontal") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {CD302D
+
+			if (id == ‘Calendario’)
+				window.open("https://www.notion.so/poliplasticomanos/Calendario-de-lanzamientos-G-I-Joe-Classified-09e7540e6b3740dbb95322bd056c4903?pvs=4#d3bf4dd084984814b0eff7ff0e5574cd", '_blank').focus();
+			else if (id == ‘Timeline’)
+				window.open("https://www.notion.so/poliplasticomanos/Calendario-de-lanzamientos-G-I-Joe-Classified-09e7540e6b3740dbb95322bd056c4903?pvs=4#bf35627dcddf4851a6e1eb10c09735e9", '_blank').focus();
+			else if (id == ‘Estado’)
+				window.open("https://www.notion.so/poliplasticomanos/Calendario-de-lanzamientos-G-I-Joe-Classified-09e7540e6b3740dbb95322bd056c4903?pvs=4#badc9cae76574f5eabe88e5fac1d5cdc", '_blank').focus();
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
